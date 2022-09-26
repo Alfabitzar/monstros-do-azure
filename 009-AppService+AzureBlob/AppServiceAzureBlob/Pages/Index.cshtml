@@ -1,0 +1,32 @@
+﻿@page
+@model IndexModel
+
+<div class="text-center">
+    <h1 class="display-4">009 - App Service + Azure Storage</h1>
+</div>
+<br/>
+<div>
+    <h2>Upload File to Storage on Blob Storage</h2>
+    <div>
+        <form asp-page-handler="upload" method="post" enctype="multipart/form-data">
+            <input type="file" multiple class="form-control" name="upload" />
+            <input type="submit" class="btn btn-primary" value="Upload File" />
+        </form>
+    </div>
+    <br/>
+    <h2>Create Queue Item on Queue Storage</h2>
+    <div>
+        <form asp-page-handler="enqueue" method="post">
+            <input type="submit" class="btn btn-success" value="Create Item" />
+        </form>        
+    </div>
+    <br/>
+    <h2>Create an Entity on Table Storage</h2>
+    <div>
+        <form asp-page-handler="entity" method="post">
+            <input type="submit" class="btn btn-success" value="Create Entity" />
+        </form>        
+        
+    </div>
+    <br/>
+</div>
