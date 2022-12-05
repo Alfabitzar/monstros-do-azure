@@ -26,7 +26,7 @@ namespace AzureFunctions.HandsOn.Functions
         {
             try
             {
-                // Execute the proce
+                // Execute the process
                 using var input = Image.Load<Rgba32>(source, out var format);
                 ResizeImage(input, target, (320, 320), format);
             }
