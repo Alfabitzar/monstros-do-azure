@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "ServiceBus.HandsOn.Topic": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ServiceBusKey": "Endpoint=sb://maz023handson.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=wKfyFYtbEVBBpCb8kLUqnITO7c9fU7/FZmZt3ykTDbw="
+      },
+      "remoteDebugEnabled": false
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "ServiceBus.HandsOn.Queue.Consumer": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7054",
+      "launchBrowser": false
+    }
+  }
+}
