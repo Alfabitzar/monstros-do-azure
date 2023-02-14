@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "_025_AzureKeyVault_HandsOn": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7134",
+      "launchBrowser": false
+    }
+  }
+}
