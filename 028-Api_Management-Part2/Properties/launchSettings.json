@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "_028_Api_Management_Part2": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7174",
+      "launchBrowser": false
+    }
+  }
+}
