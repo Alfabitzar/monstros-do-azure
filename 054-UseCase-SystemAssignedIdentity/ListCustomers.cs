@@ -17,11 +17,22 @@ namespace Alfabitzar.SampleDb
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req,
             ILogger log)
         {
-            // Call the method to get the customers
-            var customers = await GetCustomersAsync();
+            try
+            {
+                // Call the method to get the customers
+                var customers = await GetCustomersAsync();
 
-            // Return
-            return new OkObjectResult(customers);
+                // Return
+                return new OkObjectResult(customers);
+            }
+            catch (Exception ex)
+            {
+                return new BadRequestObjectResult(new 
+                {
+                    ex.Message,
+                    ex.StackTrace
+                });
+            }
         }
 
         // Method to connect in sql server and get salesltcustomer model
